@@ -5,7 +5,7 @@ from models import Comment
 
 app = Flask(__name__)
 
-UM = UserManager('.csv')
+# UM = UserManager('.csv')
 
 
 @app.route("/")
@@ -25,5 +25,8 @@ def index():
 
     </html>
     """
-    table = UM.table()
-    return page.format(table)
+    message = 'Welcome'
+    return page.format(message)
+
+# @app.route("/")
+#     def view():
