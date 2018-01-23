@@ -27,6 +27,12 @@ def index():
     """
     message = 'Welcome'
     return page.format(message)
+    sss = 'ooo'
+    return page.format(sss)
 
-# @app.route("/")
-#     def view():
+@app.route("/comments")
+def view():
+  
+    return 'ofdusdofsd'
+
+   
